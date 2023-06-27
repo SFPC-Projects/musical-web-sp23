@@ -4,8 +4,8 @@ import { AudioListener, Audio, AudioLoader, AudioAnalyser, Clock } from 'three';
 import { Scene, SphereGeometry, Vector3, PerspectiveCamera, WebGLRenderer, Color, MeshBasicMaterial, Mesh} from 'three';
 import { OrbitControls } from 'https://unpkg.com/three@0.146/examples/jsm/controls/OrbitControls.js';
 import { createSculptureWithGeometry } from 'https://unpkg.com/shader-park-core/dist/shader-park-core.esm.js';
-import { spCode } from '/sp-code.js';
-import { projectData } from '/project-data.js';
+import { spCode } from './sp-code.js';
+import { projectData } from './project-data.js';
 
 const floating = document.getElementsByClassName("floating");
 const floatingArr = Array.from(floating);
@@ -31,19 +31,19 @@ floatingArr.forEach((img, i) => {
     img.style.visibility = "visible";
     img.addEventListener("click", () => {
       modal.classList.toggle('hide');
-           
+
       let data;
-      
+
       if (projectData && projectData[`${img.id}`]) {
         console.log("DATA", projectData[`${img.id}`]);
         data = projectData[`${img.id}`];
       } else {
         data = {projectName: "none", artistName: "none", videoLink: "", videoHeight: "0", videoWidth: "0", projectDecription: "none"}
       }
-      
-      
+
+
       if (artist === null && projectDescription === null) {
-      
+
         title = document.createElement('h1');
         projectInfo.appendChild(title);
         title.classList.add("modal-project-title");
@@ -70,7 +70,7 @@ floatingArr.forEach((img, i) => {
         // vid.setAttribute("height", data.videoHeight);
         // vid.setAttribute("width", data.videoWidth);
         // vid.setAttribute("src", data.videoLink);
-        
+
         artistStatement = document.createElement('h3');
         projectInfo.appendChild(artistStatement);
         artistStatement.innerHTML = "<br>Artist Statement:<br>";
@@ -78,15 +78,15 @@ floatingArr.forEach((img, i) => {
         projectDescription = document.createElement('p');
         projectInfo.appendChild(projectDescription);
         projectDescription.innerHTML = data.projectDescription;
-        
+
         bio = document.createElement('h3');
         projectInfo.appendChild(bio);
         bio.innerHTML = "Artist Bio:";
-        
+
         artistBio = document.createElement('p');
         projectInfo.appendChild(artistBio);
         artistBio.innerHTML = data.artistBio;
-        
+
       } else {
         title.innerHTML = data.projectName;
 
@@ -100,30 +100,30 @@ floatingArr.forEach((img, i) => {
         // vid.setAttribute("src", data.videoLink);
 
         projectDescription.innerHTML = data.projectDescription;
-        
+
         artistBio.innerHTML = data.artistBio;
       }
     });
-    
-    img.addEventListener("mouseover", () => {       
+
+    img.addEventListener("mouseover", () => {
       let data;
-      
+
       if (projectData && projectData[`${img.id}`]) {
         console.log("DATA", projectData[`${img.id}`]);
         data = projectData[`${img.id}`];
       } else {
         data = {projectName: "none", artistName: "none", videoLink: "", videoHeight: "0", videoWidth: "0", projectDecription: "none"}
       }
-      
+
       hoverInfo.innerHTML = `${data.projectName} by ${data.artistName}`;
-      
+
     });
-    
-    img.addEventListener("mouseout", () => {    
+
+    img.addEventListener("mouseout", () => {
       hoverInfo.innerHTML = ``;
     });
-    
-  }, i * 3000);  
+
+  }, i * 3000);
 });
 
 closeBtn.addEventListener("click", () => {
@@ -197,7 +197,7 @@ let render = () => {
   if(analyser) {
     state.currAudio += Math.pow((analyser.getFrequencyData()[2] / 255) * .81, 8) + clock.getDelta() * .5;
     state.audio = .2 * state.currAudio + .8 * state.audio;
-    
+
   }
   controls.update();
   renderer.render( scene, camera );
@@ -210,26 +210,26 @@ const projects = document.getElementsByClassName("project-card");
 const projectArray = Array.from(projects);
 
 // projectArray.forEach((project, i) => {
-  
+
 //   window.addEventListener("scroll", () => {
 //     let scroll = window.scrollY;
 //     if (scroll > project.offsetTop - 500) {
 //       project.classList.add("show");
 //     }
 //   });
-  
+
 //   if (i % 2 === 0) {
 //     project.classList.add("left");
 //   } else {
 //     project.classList.add("right");
 //     project.style.backgroundColor = "#85a09e";
 //   }
-  
+
 // });
 
 canvas.addEventListener( 'scroll', () => {
   const curr = projectSection.getBoundingClientRect();
-  
+
   projectSection.style.top = curr.y - 2;
 });
 
