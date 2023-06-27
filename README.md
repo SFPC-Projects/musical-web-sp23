@@ -1,18 +1,42 @@
-# My cool website
+# The Musical Web Showcase (Spring 2023)
 
-This file describes your project to the community. What's your cool website about? What makes it special?
+This website is a showcase of works created by students participating in the [School for Poetic Computation](https://sfpc.study/) course The Musical Web in Spring 2023. In this course, participants explored creative applications of web audio.
 
-ヽ(๏∀๏ )ﾉ
+_Last updated: 19 June 2023_
 
-## ← index.html
+## 
 
-Where you'll write the content of your website. 
+Instructors:
 
-## ← styles.css
+Tommy Martinez
+Chloe Alexandra Thompson
 
-CSS files add styling rules to your content
+Participants:
+Ali Akhbar
+Stephen Anderson
+Jessa Shwayder Carta
+Grace Chang
+Michael Colonna
+Izzie Colpitts-Campbell
+Mars Dixon
+Seamus Edson
+frankie gj
+Kate Grant
+Hypatia
+Chelly Jin
+Bells Jorissen
+Kengchakaj Kengkarnka
+Cy Kim
+Bailey Manning
+Maya Mashkovich
+Danny Murcia
+Taylor Paydos
+Dylan Prowse
+Jeremy Purser
+Amina Ross
+Arden (Nat) Schlager
+.tatio
+Artist Named You
 
-## ← script.js
-
-If you're feeling fancy you can add interactivity to your site with Javascript
+Built with [Glitch](https://glitch.com) 
 
