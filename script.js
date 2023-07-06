@@ -1,10 +1,4 @@
 // Based on Shader Park shader library tutorial https://glitch.com/~starter-template-audio-reactive-shader-three-js-shader-park
-
-import { AudioListener, Audio, AudioLoader, AudioAnalyser, Clock } from 'three';
-import { Scene, SphereGeometry, Vector3, PerspectiveCamera, WebGLRenderer, Color, MeshBasicMaterial, Mesh} from 'three';
-import { OrbitControls } from 'https://unpkg.com/three@0.146/examples/jsm/controls/OrbitControls.js';
-import { createSculptureWithGeometry } from 'https://unpkg.com/shader-park-core/dist/shader-park-core.esm.js';
-import { spCode } from './sp-code.js';
 import { projectData } from './project-data.js';
 
 const floating = document.getElementsByClassName("floating");
