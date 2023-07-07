@@ -1,10 +1,4 @@
 // Based on Shader Park shader library tutorial https://glitch.com/~starter-template-audio-reactive-shader-three-js-shader-park
-
-import { AudioListener, Audio, AudioLoader, AudioAnalyser, Clock } from 'three';
-import { Scene, SphereGeometry, Vector3, PerspectiveCamera, WebGLRenderer, Color, MeshBasicMaterial, Mesh} from 'three';
-import { OrbitControls } from 'https://unpkg.com/three@0.146/examples/jsm/controls/OrbitControls.js';
-import { createSculptureWithGeometry } from 'https://unpkg.com/shader-park-core/dist/shader-park-core.esm.js';
-import { spCode } from './sp-code.js';
 import { projectData } from './project-data.js';
 
 const floating = document.getElementsByClassName("floating");
@@ -135,75 +129,6 @@ info.addEventListener("click", () => {
 });
 
 
-let scene = new Scene();
-
-let camera = new PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
-camera.position.z = 5.5;
-
-const canvas = document.getElementById("canvas");
-
-let renderer = new WebGLRenderer({ canvas: canvas, antialias: true, transparent: true });
-renderer.setSize( window.innerWidth, window.innerHeight);
-renderer.setPixelRatio( window.devicePixelRatio );
-renderer.setClearColor( new Color(1, 1, 1), 0);
-
-let clock = new Clock();
-
-let state = {
-  time: 0.0,
-  audio: 0.0,
-  currAudio: 0.0,
-}
-
-const listener = new AudioListener();
-camera.add( listener );
-
-const sound = new Audio( listener );
-
-
-const analyser = new AudioAnalyser( sound, 32 );
-
-let geometry  = new SphereGeometry(2, 45, 45);
-
-let mesh = createSculptureWithGeometry(geometry, spCode(), () => {
-  return {
-    time: state.time,
-    audio: state.audio,
-    isPlaying: state.isPlaying,
-  }
-})
-
-scene.add(mesh);
-
-let onWindowResize = () => {
-  camera.aspect = window.innerWidth / window.innerHeight;
-  camera.updateProjectionMatrix();
-  renderer.setSize( window.innerWidth, window.innerHeight );
-}
-
-window.addEventListener( 'resize', onWindowResize );
-
-let controls = new OrbitControls( camera, renderer.domElement, {
-  enableZoom: false,
-  enableDamping : true,
-  dampingFactor : 0.25,
-  rotateSpeed : 0.5
-} );
-
-
-let render = () => {
-  requestAnimationFrame( render );
-  state.time = state.time +clock.getDelta();
-  if(analyser) {
-    state.currAudio += Math.pow((analyser.getFrequencyData()[2] / 255) * .81, 8) + clock.getDelta() * .5;
-    state.audio = .2 * state.currAudio + .8 * state.audio;
-
-  }
-  controls.update();
-  renderer.render( scene, camera );
-};
-
-render();
 
 const projectSection = document.getElementsByClassName("project-container");
 const projects = document.getElementsByClassName("project-card");
