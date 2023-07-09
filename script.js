@@ -1,4 +1,3 @@
-// Based on Shader Park shader library tutorial https://glitch.com/~starter-template-audio-reactive-shader-three-js-shader-park
 import { projectData } from './project-data.js';
 
 const floating = document.getElementsByClassName("floating");
@@ -13,8 +12,7 @@ const hoverInfo = document.getElementById("hover-info");
       let title;
       let artist = null;
       let projectLink;
-      let media;
-      let vid;
+      let projectImg;
       let artistStatement;
       let projectDescription = null;
       let bio;
@@ -34,7 +32,6 @@ floatingArr.forEach((img, i) => {
       } else {
         data = {projectName: "none", artistName: "none", videoLink: "", videoHeight: "0", videoWidth: "0", projectDecription: "none"}
       }
-
 
       if (artist === null && projectDescription === null) {
 
@@ -56,14 +53,12 @@ floatingArr.forEach((img, i) => {
         projectLink.innerHTML = data.projectLink;
 
 
-        // media = document.createElement('div');
-        // projectInfo.appendChild(media);
-        // media.classList.add("modal-project-media");
-        // vid = document.createElement('iframe');
-        // media.appendChild(vid);
-        // vid.setAttribute("height", data.videoHeight);
-        // vid.setAttribute("width", data.videoWidth);
-        // vid.setAttribute("src", data.videoLink);
+        projectImg = document.createElement('img');
+        projectInfo.appendChild(projectImg);
+        projectImg.classList.add("modal-project-img");
+        projectImg.setAttribute("height", 540);
+        projectImg.setAttribute("width", 960);
+        projectImg.setAttribute("src", `./assets/img/${data.img}`);
 
         artistStatement = document.createElement('h3');
         projectInfo.appendChild(artistStatement);
@@ -89,9 +84,7 @@ floatingArr.forEach((img, i) => {
         projectLink.href = data.projectLink;
         projectLink.innerHTML = data.projectLink;
 
-        // vid.setAttribute("height", data.videoHeight);
-        // vid.setAttribute("width", data.videoWidth);
-        // vid.setAttribute("src", data.videoLink);
+        projectImg.setAttribute("src", `./assets/img/${data.img}`);
 
         projectDescription.innerHTML = data.projectDescription;
 
@@ -126,36 +119,6 @@ closeBtn.addEventListener("click", () => {
 
 info.addEventListener("click", () => {
   infoPane.classList.toggle('hide');
-});
-
-
-
-const projectSection = document.getElementsByClassName("project-container");
-const projects = document.getElementsByClassName("project-card");
-const projectArray = Array.from(projects);
-
-// projectArray.forEach((project, i) => {
-
-//   window.addEventListener("scroll", () => {
-//     let scroll = window.scrollY;
-//     if (scroll > project.offsetTop - 500) {
-//       project.classList.add("show");
-//     }
-//   });
-
-//   if (i % 2 === 0) {
-//     project.classList.add("left");
-//   } else {
-//     project.classList.add("right");
-//     project.style.backgroundColor = "#85a09e";
-//   }
-
-// });
-
-canvas.addEventListener( 'scroll', () => {
-  const curr = projectSection.getBoundingClientRect();
-
-  projectSection.style.top = curr.y - 2;
 });
 
 const spiral = document.getElementById("spiral");

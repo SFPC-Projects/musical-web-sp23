@@ -5,17 +5,10 @@
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <link rel="icon" href="./assets/img/favicon.ico" />
     <title>The Musical Web Showcase</title>
     <link rel="stylesheet" href="./style.css" />
     <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
-    <script type="importmap">
-      {
-        "imports": {
-          "three": "https://unpkg.com/three@0.146/build/three.module.js"
-        }
-      }
-    </script>
     <script src="./script.js" type="module" defer></script>
 
 
@@ -32,8 +25,8 @@
   <body>
     <canvas id="canvas"></canvas>
     <div id="heading-container">
-        <img id="shadow" src="https://cdn.glitch.global/9b48c83c-6c8e-4281-a381-d57318641fca/the_musical_web_shadow_2.png?v=1683786616858" alt="The Musical Web"/>
-        <img id="heading-img" src="https://cdn.glitch.global/9b48c83c-6c8e-4281-a381-d57318641fca/the_musical_web_pxl.png?v=1683787199225" alt="The Musical Web"/>
+        <img id="shadow" src="./assets/img/the_musical_web_shadow_2.png" alt="The Musical Web"/>
+        <img id="heading-img" src="./assets/img/the_musical_web_pxl.png" alt="The Musical Web"/>
       </div>
     <div class="container">
       <div id="spiral-container">
@@ -45,28 +38,28 @@
           </textpath>
         </text>
 
-        <image class="floating" id="sqi" xlink:href="https://cdn.glitch.global/9b48c83c-6c8e-4281-a381-d57318641fca/poem_bg_smol.png?v=1683767894398" width="100px" height="122px" y="-20px">
+        <image class="floating" id="sqi" xlink:href="./assets/img/poem_bg_smol.png" width="100px" height="122px" y="-20px">
           <animatemotion id="sqi-ani" xlink:href="#sqi" dur="80s" repeatcount="indefinite">
             <mpath xlink:href="#curve"/>
           </animatemotion>
           <animate attributetype="CSS" attributename="opacity"
              from="1" to="0" dur="4s" begin="sqi-ani.begin+76s" />
         </image>
-                <image class="floating" id="a" xlink:href="https://cdn.glitch.global/9b48c83c-6c8e-4281-a381-d57318641fca/circlerb.png?v=1683781571948" width="100px" height="122px">
+                <image class="floating" id="a" xlink:href="./assets/img/rearraning-icon.png" width="100px" height="122px">
           <animatemotion id="a-ani" xlink:href="#a" dur="55s" repeatcount="indefinite">
             <mpath xlink:href="#curve"/>
           </animatemotion>
                   <animate attributetype="CSS" attributename="opacity"
              from="1" to="0" dur="4s" begin="a-ani.begin+51s" />
         </image>
-                <image class="floating" id="b" xlink:href="https://cdn.glitch.global/9b48c83c-6c8e-4281-a381-d57318641fca/salt-lake.jpeg?v=1683781576108" width="100px" height="122px" y="-20px">
+                <image class="floating" id="b" xlink:href="./assets/img/transitionarchives-icon.png" width="100px" height="122px" y="-20px">
           <animatemotion id="b-ani" xlink:href="#b" dur="80s" repeatcount="indefinite" begin="sqi-ani.begin+3s">
             <mpath xlink:href="#curve"/>
           </animatemotion>
           <animate attributetype="CSS" attributename="opacity"
              from="1" to="0" dur="4s" begin="b-ani.begin+76s" />
         </image>
-                <image class="floating" id="c" xlink:href="https://cdn.glitch.global/9b48c83c-6c8e-4281-a381-d57318641fca/test-jstreet.jpeg?v=1683781581413" width="100px" height="122px">
+                <image class="floating" id="c" xlink:href="./assets/img/triangulatorsynth-icon.png" width="122px" height="122px">
           <animatemotion id="c-ani" xlink:href="#c" dur="55s" repeatcount="indefinite" begin="a-ani.begin+3s">
             <mpath xlink:href="#curve"/>
           </animatemotion>
@@ -80,54 +73,54 @@
           <animate attributetype="CSS" attributename="opacity"
              from="1" to="0" dur="4s" begin="d-ani.begin+76s" />
         </image>
-                <image class="floating" id="e" xlink:href="https://cdn.glitch.global/9b48c83c-6c8e-4281-a381-d57318641fca/circlerb.png?v=1683781571948" width="100px" height="122px">
+                <image class="floating" id="e" xlink:href="./assets/img/youvegotmail-icon.png" width="100px" height="122px">
           <animatemotion id="e-ani" xlink:href="#e" dur="55s" repeatcount="indefinite" begin="a-ani.begin+6s">
             <mpath xlink:href="#curve"/>
           </animatemotion>
                   <animate attributetype="CSS" attributename="opacity"
              from="1" to="0" dur="4s" begin="e-ani.begin+51s" />
         </image>
-        <image class="floating" id="f" xlink:href="https://cdn.glitch.global/9b48c83c-6c8e-4281-a381-d57318641fca/box.png?v=1683781776847" width="100px" height="122px" y="-20px">
+        <image class="floating" id="f" xlink:href="./assets/img/overwhelmed-icon.png" width="100px" height="122px" y="-20px">
           <animatemotion id="f-ani" xlink:href="#f" dur="80s" repeatcount="indefinite" begin="sqi-ani.begin+8s">
             <mpath xlink:href="#curve"/>
           </animatemotion>
           <animate attributetype="CSS" attributename="opacity"
              from="1" to="0" dur="4s" begin="f-ani.begin+76s" />
         </image>
-                <image class="floating" id="g" xlink:href="https://cdn.glitch.global/9b48c83c-6c8e-4281-a381-d57318641fca/poem_bg_smol.png?v=1683767894398" width="100px" height="122px">
+                <image class="floating" id="g" xlink:href="./assets/img/lettinggokite-icon.png" width="100px" height="122px">
           <animatemotion id="g-ani" xlink:href="#g" dur="55s" repeatcount="indefinite" begin="a-ani.begin+8s">
             <mpath xlink:href="#curve"/>
           </animatemotion>
                   <animate attributetype="CSS" attributename="opacity"
              from="1" to="0" dur="4s" begin="g-ani.begin+51s" />
         </image>
-        <image class="floating" id="h" xlink:href="https://cdn.glitch.global/9b48c83c-6c8e-4281-a381-d57318641fca/test-jstreet.jpeg?v=1683781581413" width="100px" height="122px" y="-20px">
+        <image class="floating" id="h" xlink:href="./assets/img/magneticsoni-icon.png" width="100px" height="122px" y="-20px">
           <animatemotion id="h-ani" xlink:href="#h" dur="80s" repeatcount="indefinite" begin="sqi-ani.begin+11s">
             <mpath xlink:href="#curve"/>
           </animatemotion>
           <animate attributetype="CSS" attributename="opacity"
              from="1" to="0" dur="4s" begin="h-ani.begin+76s" />
         </image>
-                <image class="floating" id="i" xlink:href="https://cdn.glitch.global/9b48c83c-6c8e-4281-a381-d57318641fca/circlerb.png?v=1683781571948" width="100px" height="122px">
+                <image class="floating" id="i" xlink:href="./assets/img/realake-icon.png" width="100px" height="100px">
           <animatemotion id="i-ani" xlink:href="#i" dur="55s" repeatcount="indefinite" begin="a-ani.begin+11s">
             <mpath xlink:href="#curve"/>
           </animatemotion>
                   <animate attributetype="CSS" attributename="opacity"
              from="1" to="0" dur="4s" begin="i-ani.begin+51s" />
         </image>
-        <image class="floating" id="j" xlink:href="https://cdn.glitch.global/9b48c83c-6c8e-4281-a381-d57318641fca/circlerb.png?v=1683781571948" width="100px" height="122px">
+        <image class="floating" id="j" xlink:href="./assets/img/mobilechoir-icon.png" width="100px" height="122px">
           <animatemotion id="j-ani" xlink:href="#j" dur="60s" repeatcount="indefinite" begin="sqi-ani.begin+14s">
             <mpath xlink:href="#curve"/>
           </animatemotion>
                   <animate attributetype="CSS" attributename="opacity"
              from="1" to="0" dur="4s" begin="j-ani.begin+60" />
         </image>
-        <image class="floating" id="k" xlink:href="https://cdn.glitch.global/9b48c83c-6c8e-4281-a381-d57318641fca/circlerb.png?v=1683781571948" width="100px" height="122px">
-          <animatemotion id="k-ani" xlink:href="#k" dur="77s" repeatcount="indefinite" begin="a-ani.begin+14s">
+        <image class="floating" id="k" xlink:href="./assets/img/memorygarden-icon.png" width="100px" height="122px">
+          <animatemotion id="k-ani" xlink:href="#k" dur="80s" repeatcount="indefinite" begin="a-ani.begin+14s">
             <mpath xlink:href="#curve"/>
           </animatemotion>
                   <animate attributetype="CSS" attributename="opacity"
-             from="1" to="0" dur="4s" begin="k-ani.begin+58s" />
+             from="1" to="0" dur="4s" begin="k-ani.begin+64s" />
         </image>
 
 
@@ -197,7 +190,7 @@
     </div>
 
     <div id="info">
-      <h2>info</h2><img id="plus"  src="https://cdn.glitch.global/9b48c83c-6c8e-4281-a381-d57318641fca/plus-icon.png?v=1685604231885" />
+      <h2>info</h2><img id="plus"  src="./assets/img/plus-icon.png" alt="toggle info"/>
 
     </div>
     <div id="modal" class="hide">
