@@ -1,4 +1,5 @@
 import { projectData } from './project-data.js';
+console.log(" ______                     \n(  //                       \n  //_  _                    \n_// /_(/_                   \n                            \n                            \n _ _ _                     _\n( / ) )        o          //\n / / / , , (  ,  _, __,  // \n/ / (_(_/_/_)_(_(__(_/(_(/_ \n                            \n                            \n __    _                    \n( /   /   /                 \n / / /_  /                  \n(_/_/(/_/_)                 \n                            \n                            ");
 
 const floating = document.getElementsByClassName("floating");
 const floatingArr = Array.from(floating);
@@ -27,7 +28,6 @@ floatingArr.forEach((img, i) => {
       let data;
 
       if (projectData && projectData[`${img.id}`]) {
-        console.log("DATA", projectData[`${img.id}`]);
         data = projectData[`${img.id}`];
       } else {
         data = {projectName: "none", artistName: "none", videoLink: "", videoHeight: "0", videoWidth: "0", projectDecription: "none"}
@@ -96,7 +96,6 @@ floatingArr.forEach((img, i) => {
       let data;
 
       if (projectData && projectData[`${img.id}`]) {
-        console.log("DATA", projectData[`${img.id}`]);
         data = projectData[`${img.id}`];
       } else {
         data = {projectName: "none", artistName: "none", videoLink: "", videoHeight: "0", videoWidth: "0", projectDecription: "none"}
