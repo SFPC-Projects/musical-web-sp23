@@ -56,8 +56,8 @@ floatingArr.forEach((img, i) => {
         projectImg = document.createElement('img');
         projectInfo.appendChild(projectImg);
         projectImg.classList.add("modal-project-img");
-        projectImg.setAttribute("height", 540);
-        projectImg.setAttribute("width", 960);
+        // projectImg.setAttribute("width", 55 + "vw");
+        // projectImg.setAttribute("height", "auto");
         projectImg.setAttribute("src", `./assets/img/${data.img}`);
 
         artistStatement = document.createElement('h3');
@@ -92,22 +92,24 @@ floatingArr.forEach((img, i) => {
       }
     });
 
-    img.addEventListener("mouseover", () => {
-      let data;
+    if (window.screen.width > 600) {
+      img.addEventListener("mouseover", () => {
+        let data;
 
-      if (projectData && projectData[`${img.id}`]) {
-        data = projectData[`${img.id}`];
-      } else {
-        data = {projectName: "none", artistName: "none", videoLink: "", videoHeight: "0", videoWidth: "0", projectDecription: "none"}
-      }
+        if (projectData && projectData[`${img.id}`]) {
+          data = projectData[`${img.id}`];
+        } else {
+          data = {projectName: "none", artistName: "none", videoLink: "", videoHeight: "0", videoWidth: "0", projectDecription: "none"}
+        }
 
-      hoverInfo.innerHTML = `${data.projectName} by ${data.artistName}`;
+        hoverInfo.innerHTML = `${data.projectName} by ${data.artistName}`;
 
-    });
+      });
 
-    img.addEventListener("mouseout", () => {
-      hoverInfo.innerHTML = ``;
-    });
+      img.addEventListener("mouseout", () => {
+        hoverInfo.innerHTML = ``;
+      });
+    }
 
   }, i * 3000);
 });

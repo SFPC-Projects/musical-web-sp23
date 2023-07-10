@@ -175,8 +175,13 @@ h1, h2, h3, p {
   font-size: 2rem;
 }
 
-.modal-project-link{
+.modal-project-link {
   font-size: 1.5rem;
+}
+
+.modal-project-img {
+  width: 55vw;
+  height: auto;
 }
 
 .hide {
@@ -258,7 +263,7 @@ h1, h2, h3, p {
   max-height: 78vh;
   padding-right: 0.5rem;
   overflow-y: auto;
-  scrollbar-width: thin;  
+  scrollbar-width: thin;
   scrollbar-color: black rgba(218, 247, 69, 0.95);
 }
 
@@ -291,7 +296,7 @@ h1, h2, h3, p {
 }
 
 @media only screen and (max-width: 600px) {
-  
+
   html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
   a, abbr, acronym, address, big, cite, code,
@@ -316,7 +321,7 @@ h1, h2, h3, p {
     flex-direction: column;
     overflow: hidden;
   }
-  
+
   #modal {
     position: absolute;
     display: flex;
@@ -324,7 +329,7 @@ h1, h2, h3, p {
     height: 100vh;
     background-color: rgba(218, 247, 69,0.75);
     font-size: 1.5rem;
-    z-index: 300;
+    z-index: 5000;
 
   }
 
@@ -332,10 +337,10 @@ h1, h2, h3, p {
     bottom: 0;
     padding: .8rem;
     font-size: 1rem;
-    color: #000000;
+    color: rgba(218, 247, 69);
     width: fit-content;
     height: fit-content;
-    background: none;
+    background: #000000;
     border: 2px solid #000000;
     border-radius: 50px;
     align-self: end;
@@ -355,18 +360,18 @@ h1, h2, h3, p {
     align-self: center;
     overflow: auto;
   }
-  
-    
+
+
   .modal-project-card a {
     font-size: 1rem;
   }
-  
+
   .modal-project-card p {
     font-size: 1rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
-  
+
   #heading-container {
     position: fixed;
     display: flex;
@@ -376,7 +381,7 @@ h1, h2, h3, p {
     justify-content: center;
     overflow: visible;
   }
-  
+
   #heading-img {
     position: absolute;
     top: 0;
@@ -395,7 +400,7 @@ h1, h2, h3, p {
     animation: 3s infinite alternate min;
     align-self: center;
   }
-  
+
   #info-pane {
     position: absolute;
     display: block;
@@ -410,23 +415,23 @@ h1, h2, h3, p {
     z-index: 500;
     justify-self: center;
   }
-  
+
    #info-pane h3, #info-pane h4, #info-pane p {
     height: fit-content;
   }
-  
+
   #info-pane h3 {
     font-family: 'Cherry Bomb One', monospace;
     font-size: 2.2rem;
   }
-  
+
   #info-pane-content {
     display: block;
     font-family: 'Roboto Mono', monospace;
     max-height: 70vh;
     padding-right: 0.5rem;
     overflow-y: auto;
-    scrollbar-width: thin;  
+    scrollbar-width: thin;
     scrollbar-color: black rgba(218, 247, 69, 0.95);
   }
 }
