@@ -95,4 +95,28 @@ export const projectData = {
     projectDescription: "The piece Memory Garden is based around a physical box I have containing various objects I've held onto from old friendships and exes. These items are rarely looked at IRL so I wanted to create a place to hold them that felt more like a haven/dream state than a confined space. I created sounds with my friends synth + phone recordings that I associate with the moods of the objects and memories to create a soundscape. This piece contains a lot of emotional relief and reflection.",
     artistBio:"Taylor Paydos is a Brooklyn based digital artist and engineer. They work with physical computation, experimental web work, and film. Within their web work they have been combining video, creative coding, machine learning, and AI to create dialogues around digital consent and the avatar. Within their film work they have been interested in how narratives can be constructed using computer interfaces and the boundaries that can be pushed within that."
   },
+  l: {
+    projectName: "Untitled",
+    artistName:"Maxine De La Pozas",
+    projectLink: "https://222xxx.glitch.me/",
+    img: "untitled.png",
+    projectDescription: "Ti was dreaming about writing a music piece for this gear (faderfox pc-12) that is just 72 identical knobs in a grid — a piece where the interface-to-sound mapping changes over time so the act of playing is searching for interaction , sort of like minesweeper or something. Realized i could do a simple version of that with the qwerty keyboard. Basically, one key changes the sample buffer, and then it gets reassigned to another secret key. “treasure” variable. I have fun either mashing the keys a lot and getting quick sample changes, or trying to select every key except “treasure.”",
+    artistBio:"gnarl.online / axine.net"
+  },
+  m: {
+    projectName: "Bounce Synth",
+    artistName:"Michael Colonna",
+    projectLink: "https://bounce-synth.glitch.me/",
+    img: "bouncesynth.png",
+    projectDescription: "Bounce Synth is a simple music-making toy. Balls bounce around boxes and produce musical notes in the process, all within a contained, ephemeral space that can never be exactly replicated. I created the piece with a simple goal: give users a simple, fun UI with a single principle – balls and boxes making notes – and let them run wild. Rather than try to impose a concept or communicate an idea, the toy emphasizes the potentiality of software as a blank canvas, letting users define their own experience and express their fleeting creative impulses. Expression happens through media, and with software, you can create any medium you want.Also, I had no prior musical background, and this was a good chance to teach myself all things music and sound on the web 😊",
+    artistBio:"Michael is a software engineer living in Brooklyn, New York. He is fascinated by the intersection of software, creativity, and philosophy. He hopes to build software that expands the range of human expression."
+  },
+  n: {
+    projectName: "coping mechanisms",
+    artistName:"Chelly Jin",
+    projectLink: "https://coping-mechanisms.glitch.me/",
+    img: "copingmechanisms.png",
+    projectDescription: "Asking an 8-ball for answers, staring at my canker sore, a self portrait as a productivity cyborg, a home office. My coping mechanisms are the focal piece for this sound feng shui experience. As you move objects around the space, my stories in these scenes will sing a composition for you. ",
+    artistBio:"Chelly Jin (she/her) is an emerging Korean American new media artist and a designer based in Seattle, WA. Her work explores themes of embodiment, intimacy, and belonging while weaving together technology and fabrication."
+  },
 }

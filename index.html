@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
-
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="./assets/img/favicon.ico" />
@@ -10,7 +8,6 @@
     <link rel="stylesheet" href="./style.css" />
     <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
     <script src="./script.js" type="module" defer></script>
-
 
     <link rel="canonical" href="" />
     <meta name="description" content="A showcase of works created by students in the School for Poetic Computation The Musical Web course Spring 2023."/>
@@ -122,8 +119,27 @@
                   <animate attributetype="CSS" attributename="opacity"
              from="1" to="0" dur="4s" begin="k-ani.begin+64s" />
         </image>
-
-
+        <image class="floating" id="l" xlink:href="./assets/img/untitled.png" width="100px" height="122px">
+          <animatemotion id="l-ani" xlink:href="#l" dur="80s" repeatcount="indefinite" begin="a-ani.begin+12s">
+            <mpath xlink:href="#curve"/>
+          </animatemotion>
+                  <animate attributetype="CSS" attributename="opacity"
+             from="1" to="0" dur="4s" begin="l-ani.begin+60s" />
+        </image>
+        <image class="floating" id="m" xlink:href="./assets/img/bouncesynth.png" width="100px" height="122px">
+          <animatemotion id="m-ani" xlink:href="#m" dur="80s" repeatcount="indefinite" begin="a-ani.begin+10s">
+            <mpath xlink:href="#curve"/>
+          </animatemotion>
+                  <animate attributetype="CSS" attributename="opacity"
+             from="1" to="0" dur="4s" begin="m-ani.begin+60s" />
+        </image>
+        <image class="floating" id="n" xlink:href="./assets/img/copingmechanisms.png" width="100px" height="122px">
+          <animatemotion id="n-ani" xlink:href="#n" dur="80s" repeatcount="indefinite" begin="a-ani.begin+8s">
+            <mpath xlink:href="#curve"/>
+          </animatemotion>
+                  <animate attributetype="CSS" attributename="opacity"
+             from="1" to="0" dur="4s" begin="n-ani.begin+60s" />
+        </image>
       </svg>
     </div>
 
