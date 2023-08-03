@@ -97,7 +97,7 @@ export const projectData = {
   },
   l: {
     projectName: "Untitled",
-    artistName:"Maxine De La Pozas",
+    artistName:"Maxine de las Pozas",
     projectLink: "https://222xxx.glitch.me/",
     img: "untitled.png",
     projectDescription: "i was dreaming about writing a music piece for this gear (faderfox pc-12) that is just 72 identical knobs in a grid — a piece where the interface-to-sound mapping changes over time so the act of playing is searching for interaction , sort of like minesweeper or something. Realized i could do a simple version of that with the qwerty keyboard. Basically, one key changes the sample buffer, and then it gets reassigned to another secret key. “treasure” variable. I have fun either mashing the keys a lot and getting quick sample changes, or trying to select every key except “treasure.”",
@@ -118,5 +118,29 @@ export const projectData = {
     img: "copingmechanisms.png",
     projectDescription: "Asking an 8-ball for answers, staring at my canker sore, a self portrait as a productivity cyborg, a home office. My coping mechanisms are the focal piece for this sound feng shui experience. As you move objects around the space, my stories in these scenes will sing a composition for you. ",
     artistBio:"Chelly Jin (she/her) is an emerging Korean American new media artist and a designer based in Seattle, WA. Her work explores themes of embodiment, intimacy, and belonging while weaving together technology and fabrication."
+  },
+  o: {
+    projectName: "Soundbyte Museum",
+    artistName:"Maya Mashkovich",
+    projectLink: "https://a-frame-a-day.glitch.me/",
+    img: "aframeaday.png",
+    projectDescription: "As I spend time with loved ones or meander alone through whatever space I'm in, I take short sound recordings as a keepsake. In this piece, I use spatial design to combine these sound recordings with imagery and a 3D timeline. In a way, it's a museum of my experiences, or in other words, a virtual diary.",
+    artistBio:"I'm a 27 year old Brooklyn resident. My life started in Israel and continued through Ukrainian Jewish heritage. I'm interested in the way people think and move through the world which that has translated into my day job: product design. Though my 9-5 focuses on the digital world, I get inspiration from the physical and abstract. Music and meals are the primary ways I make my connections with humans. Taking walks is the way that I make connections with my surroundings."
+  },
+  p: {
+    projectName: "A Pleasant Experience",
+    artistName:"Cy Kim",
+    projectLink: "https://a-pleasant-experience.herokuapp.com/",
+    img: "apleasantexperience.png",
+    projectDescription: "This is socket based collaborative noise making interface. Each user (socket) is assigned a voice with a checkbox to turn their voice on/off and slider to control their pitch. Their voices are combined into an additive synth to make cacophonous noise. Depending on the combinations, you can hear various textures or pulsing from phase interference. ",
+    artistBio:"Cy Kim (she/her)  is a coder and experimental sound artist. www.cy-kim.com"
+  },
+  q: {
+    projectName: "Trash & Treasure",
+    artistName:"Jessa Shwayda Carter",
+    projectLink: "https://solar-rural-diagram.glitch.me/",
+    img: "trashtreasure.png",
+    projectDescription: "Trash & Treasure is a lightly satyrical, hopefully sensual, interactive web-based sound and image collage that was born of observation, rumination, “chance” encounters, half memories, unmet desires and a trail of bread crumbs. It’s a little industrial, a little folk myth, a little of the earth, ether, and underworld and very much allegorical. It started with an intent to make something that could engage the senses while on/in screens, to pique curiosity, to incite a slowing down and grounding into the pre/post-human world via a digital space and possibly even coax a haptic, tactile, analog feeling. It ended up becoming an open door where there was previously a dead end (for me anyway). Releasing sound work on the internet has felt largely unappealing, rote and restrictive. As rudimentary as this project is, it functions as a means of releasing music and sound work that is still within the body it came from, within the world of my practice instead of a severed fragment of my practice adrift inside of structures that weren’t built with it’s multidimensionality in mind. ",
+    artistBio:"Jessa Carta is an omnidisciplinary artist and creative project doula on the periphery of many spheres of influence and therefore deeply centered in the liminal, ecotonal, relational and translational. She is compelled towards rhizomatic frameworks, pattern literacy and the healing power of ritual containers. Her artistic practice merges photography, video, sound, text, sculpture, somatics, durational performance, installation and community organizing. Jessa is currently the prime mover of arts-based research project LAND LAND. Her education and research has included certifications as a natural builder, permaculturalist and solidarity economist. "
   },
 }
