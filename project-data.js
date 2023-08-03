@@ -100,7 +100,7 @@ export const projectData = {
     artistName:"Maxine De La Pozas",
     projectLink: "https://222xxx.glitch.me/",
     img: "untitled.png",
-    projectDescription: "Ti was dreaming about writing a music piece for this gear (faderfox pc-12) that is just 72 identical knobs in a grid — a piece where the interface-to-sound mapping changes over time so the act of playing is searching for interaction , sort of like minesweeper or something. Realized i could do a simple version of that with the qwerty keyboard. Basically, one key changes the sample buffer, and then it gets reassigned to another secret key. “treasure” variable. I have fun either mashing the keys a lot and getting quick sample changes, or trying to select every key except “treasure.”",
+    projectDescription: "i was dreaming about writing a music piece for this gear (faderfox pc-12) that is just 72 identical knobs in a grid — a piece where the interface-to-sound mapping changes over time so the act of playing is searching for interaction , sort of like minesweeper or something. Realized i could do a simple version of that with the qwerty keyboard. Basically, one key changes the sample buffer, and then it gets reassigned to another secret key. “treasure” variable. I have fun either mashing the keys a lot and getting quick sample changes, or trying to select every key except “treasure.”",
     artistBio:"gnarl.online / axine.net"
   },
   m: {
