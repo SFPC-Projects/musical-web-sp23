@@ -38,12 +38,7 @@ a {
   width: fit-content;
 }
 
-footer a {
-  display: inline-block !important;
-  text-decoration: none;
-  color: #000000;
-  background-color: transparent;
-}
+
 
 #heading-container {
   position: fixed;
@@ -227,6 +222,7 @@ h1, h2, h3, p {
 
 #plus {
     transition: transform .7s ease-in-out;
+    z-index:1000;
 }
 
 #plus:hover  {
